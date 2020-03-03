@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>
+计算机
+</title>
+
+<!--调用培训CSS-->
+<link type="text/css" rel="stylesheet" href="styles/jsj.css" />
+<link type="text/css" rel="stylesheet" href="styles/bott.css" />
+<!--轮播-->
+<script src="js/lunbo.js" type="text/javascript"></script>
+<script src="js/bing_id.js" type="text/javascript"></script>
+</head>
+<style type="text/css">
+#navcol {
+	color: #f5660a;
+	font-weight: bold;
+}
+.soai1 {
+
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999999;
+    left: 57px;
+
+}
+.soai1 img {
+
+    width: 100%;
+
+}
+</style>
+
+
+
+<!--主导航&轮播-->
+<!--主导航-->
+<div class="dhnav">
+   
+   <div class="dhcontent">
+   <ul>
+   
+  
+    <li>
+  <a  href="../ruptureStrength"  >
+   破裂强度计算
+</a>
+   </li>
+   
+      <li>
+  <a  href="../pressureIntensity" >
+   压力强度计算
+</a>
+   </li>
+   
+       <li>
+  <a href="#bqpxsp" id="current" >
+   订单重量转换
+</a>
+   </li>
+   
+          <li>
+  <a href="../cartonPrice" >
+   纸箱价格计算
+</a>
+   </li>
+      
+   
+ 
+   
+ 	</ul>
+   </div>
+</div>
+
+
+<!--计算机-->
+<div class="jsj">
+  <div class="wlszbg">
+    
+      <div class="wlbtwz"><strong>瓦楞值设置</strong><span class="wlbtwz2">（初始值为默认数值，如果与您的数值不相符，您可以在输入框中进行修改,则您设置的瓦楞值将会参与到本页面的计算。它也将默认为其它计算器的收缩率。）</span></div>
+      
+      <div class="wlscon">
+      <strong>A楞</strong><span class="yss"> 收缩率=</span>&nbsp;<input  onfocus="Onfocuskkk1(this);" onblur="Onblurkkk1(this);" id="ss1" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.550" size="15">
+      </div>
+    <div class="wlscon">
+     <strong>C楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss3"  onfocus="Onfocuskkk2(this);" onblur="Onblurkkk2(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.450" size="15">
+    </div>
+    <div class="wlscon">
+     <strong>B楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss2"   onfocus="Onfocuskkk3(this);" onblur="Onblurkkk3(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.350" size="15">
+    </div>
+    <div class="wlscon">
+     <strong>E楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss4"  onfocus="Onfocuskkk4(this);" onblur="Onblurkkk4(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.270" size="15">
+      </div>
+  </div>
+  <!--计算机左边-->
+  <div class="jsjzb">
+    <div class="jsjzb4">
+      <div class="jsjzbtit">
+        <img src="images/zbtit.jpg"/>
+      </div>
+      <div class="jsjcon">
+       &nbsp;&nbsp;&nbsp;&nbsp;瓦楞纸板总定量主要是瓦楞纸板面纸、里纸、夹芯纸以及所有的瓦楞纸的定量总和计算得出，这里特别重要的是瓦楞纸的楞型缩率直接影响定量大小，该计算结果也可以用于下面对于订单数量的转换。
+      </div>
+      <div class="jsgs1">
+          计算公式：G=各层原纸定量×对应收缩率+粘合剂重量	
+          </div>
+      <div class="zhhysr1">
+        <table class="zhhysrk" width="470" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td height="26" width="138">面纸定量G</td>
+    <td width="210"><input type="text" id="yzhyqd1" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>里纸定量G</td>
+    <td><input type="text" id="yzhyqd2" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>夹层纸1定量G</td>
+    <td><input type="text" id="yzhyqd3" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>夹层纸2定量G</td>
+    <td><input type="text" id="yzhyqd4" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸1定量G</td>
+    <td><input type="text" id="yzhyqd5" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx1" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸2定量G</td>
+    <td><input type="text" id="yzhyqd6" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx2" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸3定量G</td>
+    <td><input type="text" id="yzhyqd7" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;"><span class="bgz"> g/m2</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx3" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>粘合剂重量</td>
+    <td><select id="wx4" style="width:90px; height:18px;color:#888888;font-size:12px;">
+<option value="0">重量选择</option>
+<option value="8">单瓦8克</option>
+<option value="16">双瓦16克</option>
+<option value="24">三瓦24克</option>
+</select>
+    <span class="bgz"> g/m2</span></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div class="jsann">
+          <span><input style="width:90px; height:26px; background:#ffc39a"   value="点此算出结果" type="button" onclick="wlzzhhyqdjisuan()"></span>
+          <span class="kkk"><input style="width:90px; height:26px;"   value="清空重新填写" type="button" onclick="jljisuannull()"></span>
+          </div>
+      </div>
+      
+          <div class="zbdlsm">
+        <table class="zbdlsmk" width="216" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td class="zbdlsmk1">粘合剂重量范围：8~24g/m2</td>
+  </tr>
+  <tr>
+    <td  class="zbdlsmk1">单瓦粘合剂干重一般为：8g/m2</td>
+  </tr>
+  <tr>
+    <td  class="zbdlsmk1">双瓦粘合剂干重一般为：16g/m2</td>
+  </tr>
+  <tr>
+    <td  class="zbdlsmk1">三瓦粘合剂干重一般为：24g/m2</td>
+  </tr>
+  
+</table>
+ <div class="jsjyk1">
+        <div class="jsjbt1">瓦楞纸板定量计算结果
+          </div>
+          <div class="jsjwz">
+         纸板定量G=<input type="text" id="yzqdjgg1"  disabled="disabled" align="right" style="width:70px"/> g/M^2 </div>
+       </div>
+      </div>
+    </div>
+    
+    <!--综合环压强度-->
+    <div class="jsjzb5">
+      <div class="jsjzbtit"> <img src="images/kgddtit.jpg"/></div>
+      <div class="jsjcon"> &nbsp;&nbsp;&nbsp;&nbsp;生产人员依据本结果，可以非常清楚的了解到现有库存原纸能够生产该订单多少数量，从而了解是否会出现数量短缺现象。 </div>
+      <div class="yzkgb">
+        <table class="yzkgbg" width="216" border="0" cellspacing="1" cellpadding="0">
+          <tr >
+            <td   class="btk" >面纸</td>
+            <td class="yconk">&nbsp;克重&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="kzcsk1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              <span class="bgz"> 克/平方米</span></td>
+            <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+            <td class="yconk2">&nbsp;用纸重量&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="yzzl1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              &nbsp;吨</td>
+          </tr>
+          <tr>
+            <td class="btk" >瓦1</td>
+            <td class="yconk">&nbsp;克重&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="kzcsk2" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              <span class="bgz"> 克/平方米</span></td>
+            <td class="yconk1">系数调整&nbsp;&nbsp;
+              <select name="xs" id="xs1" style="width:85px; height:18px;color:#888888;font-size:12px;">
+                <option value="">楞型选择</option>
+                <option value="1">A楞</option>
+                <option value="2">B楞</option>
+                <option value="3">C楞</option>
+                <option value="4">E楞</option>
+              </select></td>
+            <td class="yconk2">&nbsp;用纸重量&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="yzzl2" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              &nbsp;吨</td>
+          </tr>
+          <tr>
+            <td  class="btk">夹心</td>
+            <td class="yconk">&nbsp;克重&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="kzcsk3" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              <span class="bgz"> 克/平方米</span></td>
+            <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+            <td class="yconk2">&nbsp;用纸重量&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="yzzl3" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              &nbsp;吨</td>
+          </tr>
+          <tr>
+            <td  class="btk">瓦2</td>
+            <td class="yconk">&nbsp;克重&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="kzcsk4" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              <span class="bgz"> 克/平方米</span></td>
+            <td class="yconk1">系数调整&nbsp;&nbsp;
+              <select name="xs" id="xs2" style="width:85px; height:18px;color:#888888;font-size:12px;">
+                <option value="">楞型选择</option>
+                <option value="1">A楞</option>
+                <option value="2">B楞</option>
+                <option value="3">C楞</option>
+                <option value="4">E楞</option>
+              </select></td>
+            <td class="yconk2">&nbsp;用纸重量&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="yzzl4" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              &nbsp;吨</td>
+          </tr>
+          <tr>
+            <td  class="btk">里纸</td>
+            <td class="yconk">&nbsp;克重&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="kzcsk5" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              <span class="bgz"> 克/平方米</span></td>
+            <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+            <td class="yconk2">&nbsp;用纸重量&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="yzzl5" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              &nbsp;吨</td>
+          </tr>
+        </table>
+        <table class="mfbg" border="0" cellspacing="1" cellpadding="0">
+          <tr>
+            <td height="28">&nbsp;长度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" onfocus="Onfocus(this);" onblur="Onblur(this);" id="qitac1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              mm</td>
+          </tr>
+          <tr>
+            <td>&nbsp;门幅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" onfocus="Onfocus(this);" onblur="Onblur(this);"  id="qitac2" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+              mm</td>
+          </tr>
+          <tr>
+            <td>&nbsp;开数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="qitac3" value=" 请填写数值" style="  font-size:12px; color:#888888; height:18px; width:100px;" /></td>
+          </tr>
+        </table>
+        <div class="jsann1"> <span>
+          <input style="width:90px; height:26px; background:#ffc39a"   value="点此算出结果" type="button" onclick="yzkddsjisuanqi()"/>
+          </span> <span class="kkk">
+            <input style="width:90px; height:26px;"   value="清空重新填写" type="button" onclick="yzkgddsjisuanjinull()"/>
+          </span></div>
+        <div class="jsjg">
+          <div class="jsjbt"><strong>计算结果</strong></div>
+          <table  class="jsjgbg" width="214" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td width="90" height="18">合计用纸吨数</td>
+              <td width="121"><input type="text" id="jjjg1"  disabled="disabled" align="right" style="width:70px; text-align:right;" />
+                吨</td>
+            </tr>
+            <tr>
+              <td>面纸订单数量</td>
+              <td><input type="text" id="jjjg2"  disabled="disabled" align="right" style="width:70px; text-align:right;"/>
+                个</td>
+            </tr>
+            <tr>
+              <td>B瓦订单数量</td>
+              <td><input type="text" id="jjjg3"  disabled="disabled" align="right" style="width:70px; text-align:right;"/>
+                个</td>
+            </tr>
+            <tr>
+              <td>夹心订单数量</td>
+              <td><input type="text" id="jjjg4"  disabled="disabled" align="right" style="width:70px; text-align:right;"/>
+                个</td>
+            </tr>
+            <tr>
+              <td>A瓦订单数量</td>
+              <td><input type="text" id="jjjg5"  disabled="disabled" align="right" style="width:70px; text-align:right;"/>
+                个</td>
+            </tr>
+            <tr>
+              <td>里纸订单数量</td>
+              <td><input type="text" id="jjjg6"  disabled="disabled" align="right" style="width:70px; text-align:right;"/>
+                个</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--马基简化公式-->
+       <div class="jsjzb5">
+    <div class="jsjzbtit"><img src="images/ddxytit.jpg"/></div>
+      <div class="jsjcon">
+       &nbsp;&nbsp;&nbsp;&nbsp;纸箱行业人士依据订单计算原纸重量需求而开发的一个网页计算工具，生产人员依据本结果，可以非常清楚的了解到为生产该订单而需要准备每一个品种原纸的重量。 </div>
+      <div class="yzkgb">
+        <table class="yzkgbg" width="216" border="0" cellspacing="1" cellpadding="0">
+  <tr >
+    <td   class="btk" >面纸</td>
+    <td class="yconk">&nbsp;克重&nbsp;&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="skzcsk1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+    <span class="bgz"> 克/平方米</span></td>
+    <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+    <td rowspan="5" class="yconk2">&nbsp;订单数量&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="syzzl1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />&nbsp;个</td>
+  </tr>
+  <tr>
+    <td class="btk" >瓦1</td>
+    <td class="yconk">&nbsp;克重&nbsp;&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="skzcsk2" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+    <span class="bgz"> 克/平方米</span></td>
+    <td class="yconk1">系数调整&nbsp;&nbsp;<select id="sxs1" style="width:80px; height:18px;color:#888888;font-size:12px;">
+                <option value="">楞型选择</option>
+                <option value="1">A楞</option>
+                <option value="2">B楞</option>
+                <option value="3">C楞</option>
+                <option value="4">E楞</option>
+              </select></td>
+   </tr>
+  <tr>
+    <td  class="btk">夹心</td>
+    <td class="yconk">&nbsp;克重&nbsp;&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="skzcsk3" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+    <span class="bgz"> 克/平方米</span></td>
+    <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+    </tr>
+  <tr>
+    <td  class="btk">瓦2</td>
+    <td class="yconk">&nbsp;克重&nbsp;&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="skzcsk4" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+    <span class="bgz"> 克/平方米</span></td>
+    <td class="yconk1">系数调整&nbsp;&nbsp;<select id="sxs2" style="width:80px; height:18px;color:#888888;font-size:12px;">
+                <option value="">楞型选择</option>
+                <option value="1">A楞</option>
+                <option value="2">B楞</option>
+                <option value="3">C楞</option>
+                <option value="4">E楞</option>
+              </select></td>
+    </tr>
+  <tr>
+    <td  class="btk">里纸</td>
+    <td class="yconk">&nbsp;克重&nbsp;&nbsp;<input onfocus="Onfocus(this);" onblur="Onblur(this);" type="text" id="skzcsk5" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />
+    <span class="bgz"> 克/平方米</span></td>
+    <td class="yconk1">系数调整&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+    </tr>
+
+</table>
+
+<table class="mfbg" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td height="28">&nbsp;长度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" onfocus="Onfocus(this);" onblur="Onblur(this);" id="sqitac1" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />            mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;门幅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" onfocus="Onfocus(this);" onblur="Onblur(this);" id="sqitac2" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />            mm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;开数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" onfocus="Onfocus(this);" onblur="Onblur(this);" id="sqitac3" value=" 请填写数值" style="font-size:12px; color:#888888; height:18px; width:100px;" />           </td>
+  </tr>
+</table>
+
+         <div class="jsann1">
+          <span><input style="width:90px; height:26px; background:#ffc39a"   value="点此算出结果" type="button" onclick="zuihoujisuanji()"></span>
+          <span class="kkk"><input style="width:90px; height:26px;"   value="清空重新填写" type="button" onclick="lastnull()"></span>
+        </div>
+          
+          <div class="jsjg">
+            <div class="jsjbt"><strong>计算结果</strong> </div>
+           
+            <table  class="jsjgbg" width="214" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="94" height="18">合计用纸吨数</td>
+    <td width="117"><input type="text" id="sjjjg1"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+  <tr>
+    <td>面纸用纸数量</td>
+    <td><input type="text" id="sjjjg2"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+  <tr>
+    <td>B瓦订单数量</td>
+    <td><input type="text" id="sjjjg3"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+  <tr>
+    <td>夹心订单数量</td>
+    <td><input type="text" id="sjjjg4"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+  <tr>
+    <td>A瓦订单数量</td>
+    <td><input type="text" id="sjjjg5"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+  <tr>
+    <td>里纸订单数量</td>
+    <td><input type="text" id="sjjjg6"  disabled="disabled" align="right" style="width:70px; text-align:right;" />&nbsp;吨</td>
+  </tr>
+</table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--计算机右边-->
+  <div class="jsjyb">
+    <div class="dwtit">
+      <img src="images/dwtit.png"/>
+    </div>
+    <div class="dwwzt">
+   选择换算类别：</div>
+   <div class="dwxx">
+   <input type="radio" name="rdo" value="1"  onclick="huansuan()"/> 长度单位换算
+<br />
+<input type="radio" name="rdo" value="2" onclick="huansuan()" /> 质量单位换算<br />
+ <input type="radio" name="rdo" value="3" onclick="huansuan()"/> 力单位换算 
+<br />
+<input name="rdo" type="radio" value="4"  onclick="huansuan()"/> 边压强度单位换算<br />
+ <input type="radio" name="rdo" value="5" onclick="huansuan()" checked="checked"/> 耐破强度单位换算 
+<br />
+<input type="radio" name="rdo" value="6" onclick="huansuan()"/> 戳穿强度单位换算<br />
+ <input type="radio" name="rdo" value="7" onclick="huansuan()" /> 瓦楞纸板最小综合定量单位换算
+
+   </div>
+     <div class="dwysbg">
+       <div class="dwwzt1">
+   原数值</div>
+   <div class="txsz">
+<div class="biankuang">
+  <input onfocus="Onfocus(this);" onblur="Onblur(this);" name="danweihs" type="text" style="font-size:12px; text-align:right;width:100px;  height:18px; color:#888888;" value=" 请填写数值" id="danweihs" />
+  <select name="cars" style="width:65px;color:#888888;font-size:12px;height:18px;" id="xiala" >
+    <option value="51">kgf/CM^2</option>
+    <option value="52">Kpa</option>
+    <option value="53">PSI</option>
+  </select>
+</div>
+
+<div class="anuu">
+  <input style="width:38px; height:22px;"  value="换算" type="button" onclick="hsdanxuan()">
+</div>
+
+   </div>
+   
+   <div class="dwwzt1">
+   换算结果</div>
+   <table class="hsbg" width="124" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="53" id="td1">kgf/CM^2:</td>
+    <td width="71" id="ts1" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td2">Kpa:</td>
+    <td id="ts2" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td3">PSI:</td>
+    <td id="ts3" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td4" ></td>
+    <td id="ts4" style="color:#F00;"></td>
+  </tr>
+</table>
+
+     </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+<!--收藏-->

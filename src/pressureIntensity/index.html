@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>
+计算
+</title>
+
+<!--调用培训CSS-->
+<link type="text/css" rel="stylesheet" href="styles/jsj.css" />
+<link type="text/css" rel="stylesheet" href="styles/bott.css" />
+<!--轮播-->
+<script src="js/lunbo.js" type="text/javascript"></script>
+<script src="js/bing_id.js" type="text/javascript"></script>
+</head>
+<style type="text/css">
+#navcol {
+	color: #f5660a;
+	font-weight: bold;
+}
+.soai1 {
+
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999999;
+    left: 57px;
+
+}
+.soai1 img {
+
+    width: 100%;
+
+}
+</style>
+<body  id="gototop">
+
+
+<!--主导航&轮播-->
+<!--主导航-->
+<div class="dhnav">
+   
+   <div class="dhcontent">
+   <ul>
+ 
+   
+    <li>
+  <a  href="../ruptureStrength" >
+   破裂强度计算
+</a>
+   </li>
+   
+     <li>
+  <a id="current" href="#" >
+   压力强度计算
+</a>
+   </li>
+   
+       <li>
+  <a href="../orderWeight" >
+   订单重量转换
+</a>
+   </li>
+   
+    <li>
+ <a href="../cartonPrice" >
+   纸箱价格计算
+</a>
+   </li>
+      
+
+   
+ 	</ul>
+   </div>
+</div>
+
+
+<!--计算机-->
+<div class="jsj">
+  <div class="wlszbg">
+    
+      <div class="wlbtwz"><strong>瓦楞值设置</strong><span class="wlbtwz2">（初始值为默认数值，如果与您的数值不相符，您可以在输入框中进行修改,则您设置的瓦楞值将会参与到本页面的计算。它也将默认为其它计算器的收缩率。）</span></div>
+        <div class="wlscon">
+      <strong>A楞</strong><span class="yss"> 收缩率=</span>&nbsp;<input  onfocus="Onfocuskkk1(this);" onblur="Onblurkkk1(this);" id="ss1" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.550" size="15">
+      </div>
+    <div class="wlscon">
+     <strong>C楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss3"  onfocus="Onfocuskkk2(this);" onblur="Onblurkkk2(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.450" size="15">
+    </div>
+    <div class="wlscon">
+     <strong>B楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss2"   onfocus="Onfocuskkk3(this);" onblur="Onblurkkk3(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.350" size="15">
+    </div>
+    <div class="wlscon">
+     <strong>E楞</strong><span class="yss"> 收缩率=</span>&nbsp;
+     <input id="ss4"  onfocus="Onfocuskkk4(this);" onblur="Onblurkkk4(this);" type="text" style="font-size:14px; width:66px; color:#888888;" value="1.270" size="15">
+      </div>
+  </div>
+  <!--计算机左边-->
+  <div class="jsjzb">
+    <div class="jsjzb2">
+      <div class="jsjzbtit">
+        <img src="images/yztit.jpg"/>
+      </div>
+      <div class="jsjcon">
+       &nbsp;&nbsp;&nbsp;&nbsp;原纸的环压强度主要是根据原纸的克重与原纸的环压指数相乘计算得出，该计算结果你可以直接用于下列瓦楞纸板的环压强度以及纸箱的抗压强度计算 
+      </div>
+      <div class="jsj1cont1">
+        <div class="jsj1contz">
+          
+          <table width="382" border="0" cellpadding="0" cellspacing="0">
+            <tr >
+              <td width="138"><span class="bgz">面纸定量G</span></td>
+              <td width="204"><input type="text" id="hycs1" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> g/m2</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">面纸RCT指数Rd</span></td>
+              <td><input type="text" id="hycs2" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+                <span class="bgz"> N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">里纸定量G </span> </td>
+              <td><input type="text" id="hycs3" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz">g/m2</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">里纸RCT指数Rd</span> </td>
+              <td><input type="text" id="hycs4" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz">N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">夹层纸1定量G</span></td>
+              <td><input type="text" id="hycs5" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz">g/m2</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">夹层纸1RCT指数Rd</span></td>
+              <td><input type="text" id="hycs6" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">夹层纸2定量G</span></td>
+              <td><input type="text" id="hycs7" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> g/m2</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">夹层纸2RCT指数Rd</span></td>
+              <td><input type="text" id="hycs8" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸1定量G</span></td>
+              <td><input type="text" id="hycs9" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;"> 
+              <span class="bgz">g/m2</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸1RCT指数Rd</span></td>
+              <td><input type="text" id="hycs10"  onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz">N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸2定量G</span></td>
+              <td><input type="text" id="hycs11" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> g/m2 </span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸2RCT指数Rd</span></td>
+              <td><input type="text"  id="hycs12" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> N·m/g</span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸3定量G</span></td>
+              <td><input type="text" id="hycs13" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;">
+              <span class="bgz"> g/m2 </span></td>
+            </tr>
+            <tr>
+              <td><span class="bgz">瓦楞纸3RCT指数Rd</span></td>
+              <td><input type="text" id="hycs14" onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; color:#888888;"> 
+              <span class="bgz">N·m/g</span></td>
+            </tr>
+          </table>
+         <div class="jsann">
+          <span><input style="width:90px; height:26px; background:#ffc39a"   value="点此算出结果" type="button" onclick="hyqdjisuan()"></span>
+          <span class="kkk"><input style="width:90px; height:26px;"   value="清空重新填写" type="button" onclick="qingnullsx()"></span>
+          </div>
+
+        </div>
+        <div class="jsj1conty">
+          <div class="jsjybg">
+            <h1 class="jsjbt">原纸环压强度计算结果
+            </h1>
+            <table  class="jgwz" width="190" border="0" cellpadding="0" cellspacing="0">
+  <tr align="right" >
+    <td >面纸RCT=</td>
+    <td ><input type="text" id="hyjg1"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</td>
+  </tr>
+  <tr align="right">
+    <td>里纸RCT=</td>
+    <td><input type="text" id="hyjg2"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</td>
+  </tr>
+  <tr align="right">
+    <td>夹层纸1RCT=</td>
+    <td><input type="text" id="hyjg3"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M	</td>
+  </tr>
+  <tr align="right">
+    <td>夹层纸2RCT=</td>
+    <td><input type="text" id="hyjg4"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</td>
+  </tr>
+  <tr align="right">
+    <td>瓦楞纸1RCT=</td>
+    <td><input type="text" id="hyjg5"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</td>
+  </tr>
+  <tr align="right">
+    <td>瓦楞纸2RCT=</td>
+    <td><input type="text" id="hyjg6"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M	</td>
+  </tr>
+  <tr align="right">
+    <td>瓦楞纸3RCT=</td>
+    <td><input type="text" id="hyjg7"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</td>
+  </tr>
+</table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--综合环压强度-->
+    <div class="jsjzb3">
+    <div class="jsjzbtit">
+        <img src="images/zhtit.jpg"/>
+      </div>
+      <div class="jsjcon">
+      &nbsp;&nbsp;&nbsp;&nbsp;瓦楞纸板环压强度主要是瓦楞纸板的面纸、里纸、夹芯纸以及所有的瓦楞纸的环压强度的总和计算得出，这里特别重要的是瓦楞纸的楞型缩率直接影响强度大小。
+      </div>
+      <div class="jsgs1">
+          计算公式：RCT=∑(各层原纸RCT值×对应收缩率)
+      </div>
+      <div class="zhhysr1">
+        <table class="zhhysrk" width="470" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td height="26" width="138">面纸RCT值 R</td>
+    <td width="210"><input type="text" id="yzhyqd1" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>里纸RCT值 R</td>
+    <td><input type="text"id="yzhyqd2" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>夹层纸1RCT值 R</td>
+    <td><input type="text" id="yzhyqd3" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>夹层纸2RCT值 R</td>
+    <td><input type="text" id="yzhyqd4" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>收缩率Cm:1.000</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸1RCT值 R</td>
+    <td><input type="text" id="yzhyqd5" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx1" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸2RCT值 R</td>
+    <td><input type="text" id="yzhyqd6" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx2" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>瓦楞纸3RCT值 R</td>
+    <td><input type="text" id="yzhyqd7" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收缩率Cm</td>
+    <td><select id="wx3" style="width:78px; height:18px;color:#888888;font-size:12px;">
+<option value="">楞型选择</option>
+<option value="1">A楞</option>
+<option value="2">B楞</option>
+<option value="3">C楞</option>
+<option value="4">E楞</option>
+</select></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div class="anu">
+         <input style="width:90px; height:26px;" value="点此算出结果" type="button" onclick="wlzzhhyqdjisuan()">
+        </div>
+      </div>
+      
+      <div class="jsjybg4">
+            <h1 class="jsjbt">瓦楞纸板综合环压强度的计算结果</h1>
+             <div class="bstb">
+            纸板环压强度RCT=</div>
+            <div class="bstby">
+            <input type="text" id="yzqdjgg1"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M</div>
+            <div class="bstby">
+           <input type="text" id="yzqdjgg2"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> kgf/CM</div>
+            <div class="bstby">
+            <input type="text" id="yzqdjgg3"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> LBS/IN</div>
+          </div>
+      
+      
+    </div>
+          
+          
+    	
+    <!--马基简化公式-->
+        <div class="jsjzb2">
+      <div class="jsjzbtit">
+        <img src="images/kytit.jpg"/>
+      </div>
+      <div class="jsjcon">
+       &nbsp;&nbsp;&nbsp;&nbsp;瓦楞纸箱抗压强度主要是受瓦楞纸箱所用瓦楞纸板的厚度，环压强度以及纸箱的长宽影响，本计算主要是依据马基公式，马基公式目前适用于90%的纸箱。
+      </div>
+      <div class="jsj1cont1">
+        <div class="jsj1contz3">
+          <div class="jsgs">
+        <img src="images/gs.jpg" width="248" height="29"/></div>
+          <table width="332" border="0" cellpadding="0" cellspacing="0">
+            <tr height="38" >
+              <td height="38" width="139"><span class="bgz">瓦楞纸板边压强度ECT</span></td>
+              <td width="193"><input type="text" id="canshu1" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> N/M</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz">纸箱外尺寸长度 Lo</span></td>
+              <td width="193"><input type="text" id="canshu2" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> CM</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz">纸箱外尺寸宽度 Bo</span></td>
+              <td width="193"><input type="text" id="canshu3"  onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> CM</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz">瓦楞纸板厚度 T</span></td>
+              <td width="193"><input type="text" id="canshu4"  onfocus="Onfocus(this);" onblur="Onblur(this);" value=" 请填写数值" style="font-size:12px; width:158px; color:#888888;">
+              <span class="bgz"> CM</span></td>
+            </tr>
+           
+         
+        
+          </table>
+         <div class="anu">
+         <input style="width:90px; height:26px;" value="点此算出结果" type="button" onclick="jieguo()" >
+         </div>
+
+        </div>
+        <div class="jsj1conty3">
+        <table width="305" border="0" cellpadding="0" cellspacing="1" class="mj">
+  <tr>
+    <td class="mj1 bt" width="23"rowspan="6">马基简化公式参数</td>
+    <td class="mj1  bt" width="34">参数</td>
+    <td class="mj1  bt" width="34">单位</td>
+    <td class="mj1 bt1" width="209">含义/备注</td>
+  </tr>
+  <tr>
+    <td class="mj1  bt3">Pmc</td>
+    <td class="mj1  bt3">N</td>
+    <td class="mj1  bt2">瓦楞纸箱的抗压强度</td>
+  </tr>
+  <tr>
+    <td class="mj1 bt3">ECT</td>
+    <td class="mj1 bt3">N/M</td>
+    <td class="mj1  bt2">瓦楞纸板边压强度(试样尺寸:2in*2in)</td>
+  </tr>
+  <tr>
+    <td class="mj1 bt3">Z</td>
+    <td class="mj1 bt3">CM</td>
+    <td class="mj1  bt2">瓦楞纸箱外周长(2外长+2外宽)</td>
+  </tr>
+  <tr>
+    <td class="mj1 bt3">T</td>
+    <td class="mj1 bt3">CM</td>
+    <td class="mj1  bt2">瓦楞纸板厚度</td>
+  </tr>
+  <tr>
+    <td class="mj1 bt2" colspan="3">马基公式适用范围 
+762mm＜箱周长Z＜3429mm；箱高H/箱周长Z＞1/7=0.14286</td>
+    </tr>
+</table>
+
+          <div class="jsjybg2">
+            <h1 class="jsjbt">瓦楞纸箱抗压强度计算结果
+            </h1>
+            <div class="bstb1" >
+            Pmc=
+            </div>
+            <div class="bstby1" >
+           			<input type="text" id="jieguotd1"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N
+            </div>
+            <div class="bstby1" >
+            	<input type="text" id="jieguotd2"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> kgf
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--边压-->
+    <div class="bybg">
+      <span class="btt">依据抗压强度计算边压ECT
+      </span>
+       <div class="jsjcon1">
+      &nbsp;&nbsp;&nbsp;&nbsp;本计算器是依据马基公式，由纸箱的抗压强度倒推瓦楞纸板的环压强度需求是多少，作为设计的依据
+      </div>
+      <div >
+        <img src="images/jsgs1.jpg"/>
+      </div><div class="bgb">
+      <table width="318" border="0" cellpadding="0" cellspacing="0">
+            <tr height="38" >
+              <td height="38" width="139"><span class="bgz">瓦楞纸板抗压强度ECT</span></td>
+              <td width="179"><input type="text" id="byect1" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:156px; color:#888888;">
+              <span class="bgz"> N</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz1">纸箱外尺寸长度 Lo</span></td>
+              <td width="179"><span class="bgz1"><input type="text" id="byect2" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:156px; color:#888888;"> CM</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz1">纸箱外尺寸宽度 Bo</span></td>
+              <td width="179"><span class="bgz1"><input type="text"  id="byect3" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:156px; color:#888888;"> CM</span></td>
+            </tr>
+            <tr >
+              <td width="139" height="38"><span class="bgz1">瓦楞纸板厚度 T</span></td>
+              <td width="179"><span class="bgz1"><input type="text" id="byect4" onfocus="Onfocus(this);" onblur="Onblur(this);"  value=" 请填写数值" style="font-size:12px; width:156px; color:#888888;"> CM</span></td>
+            </tr>
+           
+         
+        
+          </table>
+          
+          <div ><input style=" margin-left:180px; width:90px; height:26px;"   value="点此算出结果" type="button" onclick="ectjisuan()">
+          </div>
+          </div>
+          
+          
+      <div class="jsjybg3">
+            <h1 class="jsjbt">瓦楞纸箱边压强度计算结果</h1>
+            <div class="bstb1">
+            ECT=
+            </div>
+            <div class="bstby1">
+            <input type="text" id="ectjieguo"  disabled="disabled" align="right" style="width:70px;text-align:right;"/> N/M
+            </div>
+          </div>
+    </div>
+  </div>
+
+  
+  <!--计算机右边-->
+  <div class="jsjyb">
+    <div class="dwtit">
+      <img src="images/dwtit.png"/>
+    </div>
+    <div class="dwwzt">
+   选择换算类别：</div>
+   <div class="dwxx">
+   <input type="radio" name="rdo" value="1"  onclick="huansuan()"/> 长度单位换算
+<br />
+<input type="radio" name="rdo" value="2" onclick="huansuan()" /> 质量单位换算<br />
+ <input type="radio" name="rdo" value="3" onclick="huansuan()"/> 力单位换算 
+<br />
+<input name="rdo" type="radio" value="4"  onclick="huansuan()"/> 边压强度单位换算<br />
+ <input type="radio" name="rdo" value="5" onclick="huansuan()" checked="checked"/> 耐破强度单位换算 
+<br />
+<input type="radio" name="rdo" value="6" onclick="huansuan()"/> 戳穿强度单位换算<br />
+ <input type="radio" name="rdo" value="7" onclick="huansuan()" /> 瓦楞纸板最小综合定量单位换算
+
+   </div>
+     <div class="dwysbg">
+       <div class="dwwzt1">
+   原数值</div>
+   <div class="txsz">
+<div class="biankuang">
+  <input onfocus="Onfocus(this);" onblur="Onblur(this);" name="danweihs" type="text" style="font-size:12px; text-align:right;width:100px;  height:18px; color:#888888;" value=" 请填写数值" id="danweihs" />
+  <select name="cars" style="width:65px;color:#888888;font-size:12px;height:18px;" id="xiala" >
+   <option value="51">kgf/CM^2</option>
+    <option value="52">Kpa</option>
+    <option value="53">PSI</option>
+  </select>
+</div>
+
+<div class="anuu">
+  <input style="width:38px; height:22px;"  value="换算" type="button" onclick="hsdanxuan()">
+</div>
+
+   </div>
+   
+   <div class="dwwzt1">
+   换算结果</div>
+   <table class="hsbg" width="124" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="53" id="td1">kgf/CM^2:</td>
+    <td width="71" id="ts1" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td2">Kpa:</td>
+    <td id="ts2" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td3">PSI:</td>
+    <td id="ts3" style="color:#F00;"></td>
+  </tr>
+  <tr>
+    <td id="td4" ></td>
+    <td id="ts4" style="color:#F00;"></td>
+  </tr>
+</table>
+
+     </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
+<!--收藏-->

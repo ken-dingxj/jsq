@@ -1,0 +1,79 @@
+@charset "UTF-8";
+html, body { font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #444; width: 100%; }
+
+a { color: #000000; text-decoration: none; }
+a:hover { color: #FF0000; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote { padding: 0; margin: 0; }
+
+body { font-size: 14px; }
+
+fieldset, img { border: 0; }
+
+address, caption, cite, code, dfn, em, var { font-weight: normal; font-style: normal; }
+
+ol, ul, li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+
+input, select { vertical-align: middle; }
+
+img { vertical-align: middle; }
+
+.hfix { display: inline-block; height: 100%; margin: 0 -1px; vertical-align: middle; width: 1px; }
+
+.vimg { left: 1px; margin-left: -1px; position: relative; vertical-align: middle; }
+
+.fl { float: left; _display: inline; }
+
+.fr { float: right; _display: inline; }
+
+.mt { margin-top: 6px; }
+
+
+	
+	
+	/*顶部通栏*/
+.siteNav { width: 100%; height: 35px; margin: 0 auto; line-height: 30px; word-spacing: 5px; background: #193871; font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #FFF; font-size: 12px; }
+.siteNav .fl a { font-size: 12px; color: #FFF; }
+.siteNav .fl a:hover { color: #E70012; }
+.siteNav .fr { float: right; line-height: 36px; word-spacing: 5px; font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #FFF; }
+.siteNav .fr a { font-size: 12px; color: #FFF; }
+.siteNav .fr a:hover { color: #E70012; }
+.footer { width: 100%; margin: 0 auto; background: #252E33; height: 250px; color: #ddd; padding-top:20px; }
+.footer .title { border-bottom: 1px solid #434444; font-size: 20px; color: #BBB; height: 50px; line-height: 50px; padding-top: 5px; position: relative; }
+.footer .title i { left: -2px; bottom: -3px; position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #BBB; }
+.footer .company { float: left; width:220px; margin-left: 30px; display: inline; }
+.footer .company img { float: left; margin-top: 20px; display: inline; }
+.footer .company dl { float: left; width: 230px; margin-left: 10px; display: inline; margin-top: 20px; }
+.footer .company dl dt { float: left; width: 100%; height: 30px; line-height: 30px; font-size: 22px; font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif; padding-top: 14px; }
+.footer .company dl dd { float: left; width: 100%; line-height: 20px; font-size: 12px; }
+.footer .weixin { float: left; width: 360px; margin-left:110px; display: inline; }
+.footer .weixin dl { float: left; width: 100%; padding-top: 25px; }
+.footer .weixin dl dt { float: left; width: 130px;  }
+.footer .weixin dl dd { float: left; width: 220px;color:#eee; }
+.footer .weixin dl dd h3 { line-height: 40px; font-size:20px;margin-bottom:5px; margin-top:-8px;}
+.footer .weixin dl dd p { line-height:24x; font-size:14px; }
+.footer .weixin dl dd p span { color: #D59B37; }
+.footer .aboutus { float: left; width: 250px; margin-left:110px; display: inline; }
+.boxhh{ width:1100px; margin: 0 auto;font-size:20px;color: #002b7d; }
+
+.footer .aboutus .tel { float: left; width: 100%; padding-top: 20px; }
+.footer .aboutus .tel dt { float: left; width:100px; font-size:18px;color:#fff;margin-bottom:10px; }
+.footer .aboutus .tel dd { float: left; width: 180px; font-size:20px; color: #FFF; }
+.footer .aboutus .tel dd font { font-size: 14px; color: #bbb; }
+.footer .aboutus .contact { float: left; width: 100%; height: 18px; padding: 15px 0; }
+.footer .aboutus .contact li { float: left; line-height: 18px; text-indent: 3px; font-size: 14px; display: inline; padding-right: 10px; }
+.footer .aboutus .contact li i { width: 21px; height: 18px; display: inline-block; margin-top: 2px; float: left; }
+.footer .aboutus .contact li i.qq { background: transparent url("../images/icon.png"); background-position: -40px -264px; background-repeat: repeat; }
+.footer .aboutus .contact li i.wx { background: transparent url("../images/icon.png"); background-position: -40px -237px; background-repeat: repeat; }
+.footer .aboutus .contact li i.email { background: transparent url("../images/icon.png"); background-position: -40px -289px; background-repeat: repeat; }
+.footer .aboutus .tools { float: left; width: 100%; padding-top: 15px; }
+.footer .aboutus .tools li { float: left; width: 105px; margin-right: 10px; display: inline; }
+.footer .aboutus .tools li .ebook { display: inline-block; height: 25px; background: #f56509; color: #FFF; line-height: 25px; text-align: center; width: 100%; }
+.footer .aboutus .tools li .add { display: inline-block; background: #5C6272; height: 25px; color: #FFF; line-height: 25px; width: 95px; }
+.footer .aboutus .tools li .add i { width: 21px; height: 18px; display: inline-block; margin-top: 2px; float: left; background: transparent url("../images/icon.png"); background-position: -40px -315px; background-repeat: repeat; margin-left: 4px; margin-right: 3px; }
+
+.box { width: 1000px; margin: 0 auto;}
+.boxhh{ width:1100px; margin: 0 auto;font-size:20px;color: #002b7d; padding-bottom:30px; }
+.navcol{color:#f56600;}
